@@ -3,10 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HAN GALLERY</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" href="favicon.png" />
+    <title>HAN GALLERY｜線上預約</title>
+
+<meta name="description" content="HAN GALLERY 以沉靜的空間節奏與精選作品呈現當代藝術，提供預約制參觀與更完整的觀展體驗。" />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://henry056673.github.io/HAN-GALLERY.io/" />
+<meta property="og:title" content="HAN GALLERY｜線上預約" />
+<meta property="og:site_name" content="HAN GALLERY" />
+<meta property="og:description" content="HAN GALLERY 以沉靜的空間節奏與精選作品呈現當代藝術，提供預約制參觀與更完整的觀展體驗。" />
+<meta property="og:image" content="https://henry056673.github.io/HAN-GALLERY.io/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="HAN GALLERY 畫廊空間" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="HAN GALLERY｜線上預約" />
+<meta name="twitter:description" content="HAN GALLERY 提供預約制參觀與精選展覽體驗。" />
+<meta name="twitter:image" content="https://henry056673.github.io/HAN-GALLERY.io/og-image.jpg" />
+
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="favicon.png" />
     <style>
       :root {
         --bg: #0d0d0d;
@@ -81,23 +99,19 @@
         text-overflow: ellipsis;
       }
 
-	.nav-inner {
-	  min-height: 68px;
-	  display: grid;
-	  grid-template-columns: auto 1fr auto;
-	  align-items: center;
-	  gap: 12px;
-	  padding: 12px 0;
-	}
+      .nav-links {
+        min-width: 0;
+        min-height: 1px;
+      }
 
-	.nav-inner {
-	  min-height: 68px;
-	  display: grid;
-	  grid-template-columns: auto 1fr auto;
-	  align-items: center;
-	  gap: 12px;
-	  padding: 12px 0;
-	}
+      .nav-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        justify-self: end;
+        gap: 8px;
+        min-width: 0;
+      }
 
       .lang-switch {
         display: inline-flex;
@@ -638,7 +652,7 @@
               <div class="hero-shade"></div>
             </div>
 			<div class="hero-slide">
-              <img src="./2.png" alt="Gallery hero three" loading="lazy" />
+              <img src="./2.png" alt="Gallery hero four" loading="lazy" />
               <div class="hero-shade"></div>
             </div>
 
@@ -718,7 +732,7 @@
 				  <span data-i18n="label_email_or_id">Email / 身分證字號</span>
 				  <span class="field-note" data-i18n="field_note_email_or_id">若無 Email，請填寫身分證字號。</span>
 				</label>
-				<input id="emailOrId" type="text" />
+				<input id="emailOrId" type="text" required />
               </div>
               <div class="field">
                 <label for="partySize" data-i18n="label_party_size">預約人數</label>
@@ -752,9 +766,10 @@
               </div>
               <div class="field">
                 <label for="preferredDate" class="field-label">
-				  預約日期 <span class="field-note">僅開放週六、週日預約。</span>
-				</label>
-				<input id="preferredDate" type="date" />
+                  <span data-i18n="label_date">預約日期</span>
+                  <span class="field-note" data-i18n="field_note_weekend">僅開放週六、週日預約。</span>
+                </label>
+                <input id="preferredDate" type="date" required />
               </div>
               <div class="field">
                 <label for="preferredTime" data-i18n="label_time">預約時段</label>
